@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>A55DB665-60E4-4C19-BDFC-AFD9498AB03A</key>
+		<key>76BD2834-2372-418F-8B52-C32D068956E5</key>
 		<dict>
 			<key>className</key>
 			<string>DBGConsoleLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
 			<key>fileName</key>
-			<string>A55DB665-60E4-4C19-BDFC-AFD9498AB03A.xcactivitylog</string>
+			<string>76BD2834-2372-418F-8B52-C32D068956E5.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
@@ -32,47 +32,13 @@
 			<key>signature</key>
 			<string>Run iOS</string>
 			<key>timeStartedRecording</key>
-			<real>615783756.95018601</real>
+			<real>615785466.56141806</real>
 			<key>timeStoppedRecording</key>
-			<real>615783762.55461001</real>
+			<real>615785470.208341</real>
 			<key>title</key>
 			<string>Run iOS</string>
 			<key>uniqueIdentifier</key>
-			<string>A55DB665-60E4-4C19-BDFC-AFD9498AB03A</string>
-		</dict>
-		<key>D720B1C5-0633-40F6-B86B-3C10C9FD288A</key>
-		<dict>
-			<key>className</key>
-			<string>DBGConsoleLog</string>
-			<key>documentTypeString</key>
-			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
-			<key>fileName</key>
-			<string>D720B1C5-0633-40F6-B86B-3C10C9FD288A.xcactivitylog</string>
-			<key>hasPrimaryLog</key>
-			<true/>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>S</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>iOS project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>iOS</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Run iOS</string>
-			<key>timeStartedRecording</key>
-			<real>615783771.00016999</real>
-			<key>timeStoppedRecording</key>
-			<real>615783819.57666194</real>
-			<key>title</key>
-			<string>Run iOS</string>
-			<key>uniqueIdentifier</key>
-			<string>D720B1C5-0633-40F6-B86B-3C10C9FD288A</string>
+			<string>76BD2834-2372-418F-8B52-C32D068956E5</string>
 		</dict>
 	</dict>
 </dict>

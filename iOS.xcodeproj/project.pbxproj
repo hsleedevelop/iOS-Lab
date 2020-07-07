@@ -148,10 +148,8 @@
 		3A1741ED24B414D80019C883 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3A2899EE24B3403E003791CD /* DesignPatternsViewController.swift */,
+				3A1742D124B43F0A0019C883 /* Scenes */,
 				3A28999724B3392C003791CD /* SceneDelegate.swift */,
-				3A28999924B3392C003791CD /* ContentView.swift */,
-				3A2899E524B33AB3003791CD /* ViewController.swift */,
 				3A28999524B3392C003791CD /* AppDelegate.swift */,
 			);
 			path = Classes;
@@ -168,6 +166,9 @@
 		3A17421224B415A30019C883 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
+				3A1742D024B43E5A0019C883 /* Interfaces */,
+				3A1742CF24B43E400019C883 /* Entities */,
+				3A1742CE24B43E390019C883 /* UseCases */,
 				3A17426824B418320019C883 /* Domain.xcodeproj */,
 				3A17421324B415B30019C883 /* Patterns.xcodeproj */,
 			);
@@ -177,7 +178,7 @@
 		3A17421424B415B30019C883 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A17421824B415B30019C883 /* libPatterns.a */,
+				3A17421824B415B30019C883 /* Patterns.framework */,
 				3A17429E24B41B7E0019C883 /* PatternsTests.xctest */,
 			);
 			name = Products;
@@ -229,6 +230,68 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		3A1742C224B43A670019C883 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				3A1742CC24B43E0B0019C883 /* Repositories */,
+				3A1742CB24B43E000019C883 /* Network */,
+				3A1742CD24B43E1A0019C883 /* PersistentStorages */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		3A1742CB24B43E000019C883 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		3A1742CC24B43E0B0019C883 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		3A1742CD24B43E1A0019C883 /* PersistentStorages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PersistentStorages;
+			sourceTree = "<group>";
+		};
+		3A1742CE24B43E390019C883 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = UseCases;
+			sourceTree = "<group>";
+		};
+		3A1742CF24B43E400019C883 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		3A1742D024B43E5A0019C883 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		3A1742D124B43F0A0019C883 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3A2899EE24B3403E003791CD /* DesignPatternsViewController.swift */,
+				3A28999924B3392C003791CD /* ContentView.swift */,
+				3A2899E524B33AB3003791CD /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		3A28998924B3392C003791CD = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +315,7 @@
 			isa = PBXGroup;
 			children = (
 				3A17421924B416030019C883 /* Frameworks */,
+				3A1742C224B43A670019C883 /* DataLayer */,
 				3A17421224B415A30019C883 /* DomainLayer */,
 				3A17420824B4159A0019C883 /* Architectures */,
 				3A1741ED24B414D80019C883 /* Classes */,
@@ -385,10 +449,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3A17421824B415B30019C883 /* libPatterns.a */ = {
+		3A17421824B415B30019C883 /* Patterns.framework */ = {
 			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libPatterns.a;
+			fileType = wrapper.framework;
+			path = Patterns.framework;
 			remoteRef = 3A17421724B415B30019C883 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
