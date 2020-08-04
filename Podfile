@@ -26,20 +26,20 @@ def podsForUmbrella
   # pod 'Swinject',                 '~> 2.7.1'
 end
 
-workspace 'Cardoc'
+workspace 'iOS'
 
-project 'Cardoc.xcodeproj'
+project 'iOS.xcodeproj'
 
-target 'Cardoc' do
+target 'iOS' do
     pod 'Firebase',                 '~> 6.4.0'
 
-    target 'CardocTests' do
+    target 'iOSTests' do
         inherit! :search_paths
     end
 end
 
-target 'CardocUmbrella' do
-    project 'CardocUmbrella/CardocUmbrella'
+target 'Umbrella' do
+    project 'SubProject/Umbrella/'
 
     podsForUmbrella
     #   pod 'RxSwift'
