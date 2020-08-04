@@ -1,7 +1,5 @@
 # [submodule "iOS/SubProject/MVC"]
 # 	url = git@github.com:hsleedevelop/iOS-Lab-MVC.git
-# [submodule "iOS/SubProject/Domain"]
-# 	url = git@github.com:hsleedevelop/iOS-Lab-Domain.git
 # [submodule "iOS/SubProject/Patterns"]
 # 	url = git@github.com:hsleedevelop/iOS-Lab-Patterns.git
 # [submodule "iOS/SubProject/Umbrella"]
