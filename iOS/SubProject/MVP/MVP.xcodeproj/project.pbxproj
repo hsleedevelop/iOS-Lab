@@ -10,6 +10,12 @@
 		3A63E5A024D92A3A00331D6B /* MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E59624D92A3A00331D6B /* MVP.framework */; };
 		3A63E5A524D92A3A00331D6B /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E5A424D92A3A00331D6B /* MVPTests.swift */; };
 		3A63E5A724D92A3A00331D6B /* MVP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A63E59924D92A3A00331D6B /* MVP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A63E5C424D92AC400331D6B /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E5C224D92AC400331D6B /* Domain.framework */; };
+		3A63E5C524D92AC400331D6B /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E5C224D92AC400331D6B /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A63E5C624D92AC400331D6B /* Umbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E5C324D92AC400331D6B /* Umbrella.framework */; };
+		3A63E5C724D92AC400331D6B /* Umbrella.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E5C324D92AC400331D6B /* Umbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A63E5CA24D92ADC00331D6B /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E5C924D92ADC00331D6B /* MVPViewController.swift */; };
+		3A63E5CF24D92BD900331D6B /* MVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A63E5CE24D92BD900331D6B /* MVP.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +28,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3A63E5C824D92AC400331D6B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A63E5C724D92AC400331D6B /* Umbrella.framework in Embed Frameworks */,
+				3A63E5C524D92AC400331D6B /* Domain.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3A63E59624D92A3A00331D6B /* MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A63E59924D92A3A00331D6B /* MVP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVP.h; sourceTree = "<group>"; };
@@ -29,6 +50,10 @@
 		3A63E59F24D92A3A00331D6B /* MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A63E5A424D92A3A00331D6B /* MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTests.swift; sourceTree = "<group>"; };
 		3A63E5A624D92A3A00331D6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A63E5C224D92AC400331D6B /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A63E5C324D92AC400331D6B /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A63E5C924D92ADC00331D6B /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
+		3A63E5CE24D92BD900331D6B /* MVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVP.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A63E5C624D92AC400331D6B /* Umbrella.framework in Frameworks */,
+				3A63E5C424D92AC400331D6B /* Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +83,7 @@
 				3A63E59824D92A3A00331D6B /* MVP */,
 				3A63E5A324D92A3A00331D6B /* MVPTests */,
 				3A63E59724D92A3A00331D6B /* Products */,
+				3A63E5C124D92AC400331D6B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +99,8 @@
 		3A63E59824D92A3A00331D6B /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				3A63E5CB24D92AE400331D6B /* Classes */,
+				3A63E5D124D92C0D00331D6B /* Resources */,
 				3A63E59924D92A3A00331D6B /* MVP.h */,
 				3A63E59A24D92A3A00331D6B /* Info.plist */,
 			);
@@ -84,6 +114,31 @@
 				3A63E5A624D92A3A00331D6B /* Info.plist */,
 			);
 			path = MVPTests;
+			sourceTree = "<group>";
+		};
+		3A63E5C124D92AC400331D6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E5C224D92AC400331D6B /* Domain.framework */,
+				3A63E5C324D92AC400331D6B /* Umbrella.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A63E5CB24D92AE400331D6B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E5C924D92ADC00331D6B /* MVPViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3A63E5D124D92C0D00331D6B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E5CE24D92BD900331D6B /* MVP.storyboard */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +163,7 @@
 				3A63E59224D92A3A00331D6B /* Sources */,
 				3A63E59324D92A3A00331D6B /* Frameworks */,
 				3A63E59424D92A3A00331D6B /* Resources */,
+				3A63E5C824D92AC400331D6B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +204,7 @@
 				TargetAttributes = {
 					3A63E59524D92A3A00331D6B = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					3A63E59E24D92A3A00331D6B = {
 						CreatedOnToolsVersion = 11.6;
@@ -178,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A63E5CF24D92BD900331D6B /* MVP.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A63E5CA24D92ADC00331D6B /* MVPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +327,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -340,6 +399,7 @@
 		3A63E5AB24D92A3A00331D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
@@ -356,6 +416,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.MVP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +425,7 @@
 		3A63E5AC24D92A3A00331D6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
@@ -388,6 +450,7 @@
 		3A63E5AE24D92A3A00331D6B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = MVPTests/Info.plist;
@@ -406,6 +469,7 @@
 		3A63E5AF24D92A3A00331D6B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = MVPTests/Info.plist;
