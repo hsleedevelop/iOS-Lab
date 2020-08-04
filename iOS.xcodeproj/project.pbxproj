@@ -88,6 +88,20 @@
 			remoteGlobalIDString = 3A28999124B3392C003791CD;
 			remoteInfo = iOS;
 		};
+		3A63E5B924D92A3B00331D6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A63E5B024D92A3A00331D6B /* MVP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A63E59624D92A3A00331D6B;
+			remoteInfo = MVP;
+		};
+		3A63E5BB24D92A3B00331D6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A63E5B024D92A3A00331D6B /* MVP.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A63E59F24D92A3A00331D6B;
+			remoteInfo = MVPTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +139,7 @@
 		3A2899E724B33B11003791CD /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A2899EE24B3403E003791CD /* DesignPatternsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignPatternsViewController.swift; sourceTree = "<group>"; };
 		3A543E9324C6DC78005CCBA2 /* ReferenceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceTest.swift; sourceTree = "<group>"; };
+		3A63E5B024D92A3A00331D6B /* MVP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MVP.xcodeproj; path = SubProject/MVP/MVP.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +175,7 @@
 		3A17420824B4159A0019C883 /* Architectures */ = {
 			isa = PBXGroup;
 			children = (
+				3A63E5B024D92A3A00331D6B /* MVP.xcodeproj */,
 				3A17422F24B4170F0019C883 /* MVC.xcodeproj */,
 			);
 			name = Architectures;
@@ -352,6 +368,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3A63E5B124D92A3A00331D6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E5BA24D92A3B00331D6B /* MVP.framework */,
+				3A63E5BC24D92A3B00331D6B /* MVPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,6 +460,10 @@
 					ProjectRef = 3A17422F24B4170F0019C883 /* MVC.xcodeproj */;
 				},
 				{
+					ProductGroup = 3A63E5B124D92A3A00331D6B /* Products */;
+					ProjectRef = 3A63E5B024D92A3A00331D6B /* MVP.xcodeproj */;
+				},
+				{
 					ProductGroup = 3A17421424B415B30019C883 /* Products */;
 					ProjectRef = 3A17421324B415B30019C883 /* Patterns.xcodeproj */;
 				},
@@ -506,6 +535,20 @@
 			fileType = wrapper.cfbundle;
 			path = PatternsTests.xctest;
 			remoteRef = 3A17429D24B41B7E0019C883 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A63E5BA24D92A3B00331D6B /* MVP.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MVP.framework;
+			remoteRef = 3A63E5B924D92A3B00331D6B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3A63E5BC24D92A3B00331D6B /* MVPTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MVPTests.xctest;
+			remoteRef = 3A63E5BB24D92A3B00331D6B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

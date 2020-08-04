@@ -7,6 +7,10 @@
 //
 
 public class Patterns {
+    enum GOF {
+        case Decorator
+    }
+    
     public init() {
         print("Patterns Loaded.")
     }
