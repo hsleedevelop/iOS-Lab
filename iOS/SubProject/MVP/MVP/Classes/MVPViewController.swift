@@ -25,14 +25,14 @@ public class MVPViewController: UIViewController, StoryboardSceneBased {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupAppearances()
-        self.setupUI()
-        self.prepareViewDidLoad()
+        setupAppearances()
+        setupUI()
+        prepareViewDidLoad()
     }
 
 
     private func setupAppearances() {
-        self.view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
     }
 
 
@@ -41,7 +41,7 @@ public class MVPViewController: UIViewController, StoryboardSceneBased {
     }
 
 
-    func prepareViewDidLoad() {
+    private func prepareViewDidLoad() {
 
     }
 

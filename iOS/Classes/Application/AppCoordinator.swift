@@ -33,7 +33,10 @@ class AppCoordinator: BaseCoordinator<Void> {
         if useStoryboardBase {
             //window.rootViewController = ViewController.instantiate()
             //window.rootViewController = MVC.MVCViewController.instantiate()
-            window.rootViewController = MVP.MVPViewController.instantiate()
+            //window.rootViewController = MVP.MVPViewController.instantiate()
+            let mainDependency = MainDependency(window: window)
+            let mainCoordinator = MainCoordinator(dependency: mainDependency)
+            return coordinate(to: mainCoordinator)            
         } else {
             // Create the SwiftUI view that provides the window contents.
             let contentView = ContentView()

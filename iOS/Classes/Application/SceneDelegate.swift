@@ -28,7 +28,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
         
-        appCoordinator = AppCoordinator(window: window!, useStoryboardBase: false)
+        appCoordinator = AppCoordinator(window: window!, useStoryboardBase: true)
         appCoordinator.start()
             .subscribe()
             .disposed(by: disposeBag)

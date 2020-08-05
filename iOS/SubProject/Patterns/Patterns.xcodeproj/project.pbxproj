@@ -11,6 +11,15 @@
 		3A17429024B41A4C0019C883 /* PatternsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A17428F24B41A4C0019C883 /* PatternsTests.swift */; };
 		3A17429224B41A4C0019C883 /* Patterns.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A17428424B41A4B0019C883 /* Patterns.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A1742B224B41D0F0019C883 /* Patterns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1741FA24B415260019C883 /* Patterns.swift */; };
+		3A2D174524DA4B3300AF411E /* ImageDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174424DA4B3300AF411E /* ImageDecorator.swift */; };
+		3A2D174724DA4B6700AF411E /* DecoratorRealWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174624DA4B6700AF411E /* DecoratorRealWorldTests.swift */; };
+		3A2D174A24DA4C7B00AF411E /* CharactorDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174924DA4C7B00AF411E /* CharactorDecorator.swift */; };
+		3A2D174C24DA4CCD00AF411E /* CharactorDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174B24DA4CCD00AF411E /* CharactorDecoratorTests.swift */; };
+		3A2D174E24DA4F4100AF411E /* Decorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174D24DA4F4100AF411E /* Decorator.swift */; };
+		3A2D175024DA4F6800AF411E /* DecoratorPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D174F24DA4F6800AF411E /* DecoratorPatternTests.swift */; };
+		3A2D175324DA543700AF411E /* Proxies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D175224DA543700AF411E /* Proxies.swift */; };
+		3A2D175724DA54C700AF411E /* ProxiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D175624DA54C700AF411E /* ProxiesTests.swift */; };
+		3A2D175924DA575D00AF411E /* ProxyReal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D175824DA575D00AF411E /* ProxyReal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +40,15 @@
 		3A17428A24B41A4C0019C883 /* PatternsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PatternsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A17428F24B41A4C0019C883 /* PatternsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatternsTests.swift; sourceTree = "<group>"; };
 		3A17429124B41A4C0019C883 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2D174424DA4B3300AF411E /* ImageDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDecorator.swift; sourceTree = "<group>"; };
+		3A2D174624DA4B6700AF411E /* DecoratorRealWorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorRealWorldTests.swift; sourceTree = "<group>"; };
+		3A2D174924DA4C7B00AF411E /* CharactorDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactorDecorator.swift; sourceTree = "<group>"; };
+		3A2D174B24DA4CCD00AF411E /* CharactorDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactorDecoratorTests.swift; sourceTree = "<group>"; };
+		3A2D174D24DA4F4100AF411E /* Decorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decorator.swift; sourceTree = "<group>"; };
+		3A2D174F24DA4F6800AF411E /* DecoratorPatternTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPatternTests.swift; sourceTree = "<group>"; };
+		3A2D175224DA543700AF411E /* Proxies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proxies.swift; sourceTree = "<group>"; };
+		3A2D175624DA54C700AF411E /* ProxiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxiesTests.swift; sourceTree = "<group>"; };
+		3A2D175824DA575D00AF411E /* ProxyReal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyReal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +91,11 @@
 		3A17428324B41A4B0019C883 /* Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				3A2D175124DA542800AF411E /* Proxies */,
 				3A1741FA24B415260019C883 /* Patterns.swift */,
 				3A17428424B41A4B0019C883 /* Patterns.h */,
 				3A17428524B41A4B0019C883 /* Info.plist */,
+				3A2D174824DA4C6700AF411E /* Decorator */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -85,8 +105,47 @@
 			children = (
 				3A17428F24B41A4C0019C883 /* PatternsTests.swift */,
 				3A17429124B41A4C0019C883 /* Info.plist */,
+				3A2D175524DA54B300AF411E /* ProxiesTests */,
+				3A2D175424DA54AA00AF411E /* DecoratorTests */,
 			);
 			path = PatternsTests;
+			sourceTree = "<group>";
+		};
+		3A2D174824DA4C6700AF411E /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D174D24DA4F4100AF411E /* Decorator.swift */,
+				3A2D174424DA4B3300AF411E /* ImageDecorator.swift */,
+				3A2D174924DA4C7B00AF411E /* CharactorDecorator.swift */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		3A2D175124DA542800AF411E /* Proxies */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D175224DA543700AF411E /* Proxies.swift */,
+				3A2D175824DA575D00AF411E /* ProxyReal.swift */,
+			);
+			path = Proxies;
+			sourceTree = "<group>";
+		};
+		3A2D175424DA54AA00AF411E /* DecoratorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D174F24DA4F6800AF411E /* DecoratorPatternTests.swift */,
+				3A2D174624DA4B6700AF411E /* DecoratorRealWorldTests.swift */,
+				3A2D174B24DA4CCD00AF411E /* CharactorDecoratorTests.swift */,
+			);
+			path = DecoratorTests;
+			sourceTree = "<group>";
+		};
+		3A2D175524DA54B300AF411E /* ProxiesTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A2D175624DA54C700AF411E /* ProxiesTests.swift */,
+			);
+			path = ProxiesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2D175924DA575D00AF411E /* ProxyReal.swift in Sources */,
+				3A2D174A24DA4C7B00AF411E /* CharactorDecorator.swift in Sources */,
+				3A2D174E24DA4F4100AF411E /* Decorator.swift in Sources */,
+				3A2D174524DA4B3300AF411E /* ImageDecorator.swift in Sources */,
+				3A2D175324DA543700AF411E /* Proxies.swift in Sources */,
 				3A1742B224B41D0F0019C883 /* Patterns.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,6 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2D174C24DA4CCD00AF411E /* CharactorDecoratorTests.swift in Sources */,
+				3A2D174724DA4B6700AF411E /* DecoratorRealWorldTests.swift in Sources */,
+				3A2D175724DA54C700AF411E /* ProxiesTests.swift in Sources */,
+				3A2D175024DA4F6800AF411E /* DecoratorPatternTests.swift in Sources */,
 				3A17429024B41A4C0019C883 /* PatternsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +421,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Patterns;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -381,6 +450,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Patterns;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

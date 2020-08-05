@@ -14,6 +14,13 @@
 		3A17427624B418470019C883 /* Umbrella.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17427324B418470019C883 /* Umbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A1742AD24B41CB30019C883 /* Patterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1742AC24B41CB30019C883 /* Patterns.framework */; };
 		3A1742AE24B41CB30019C883 /* Patterns.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1742AC24B41CB30019C883 /* Patterns.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2D175B24DA7E9200AF411E /* LabCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D175A24DA7E9200AF411E /* LabCategory.swift */; };
+		3A2D176D24DAAAFA00AF411E /* GithubJob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D176C24DAAAFA00AF411E /* GithubJob.swift */; };
+		3A2D176F24DAABDC00AF411E /* GithubJobsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D176E24DAABDC00AF411E /* GithubJobsUseCase.swift */; };
+		3A2D177124DAAC1E00AF411E /* GithubJobsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D177024DAAC1E00AF411E /* GithubJobsRepository.swift */; };
+		3A63E62924D9483900331D6B /* LabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E62824D9483900331D6B /* LabItem.swift */; };
+		3A63E62B24D94F1000331D6B /* LabItemListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E62A24D94F1000331D6B /* LabItemListUseCase.swift */; };
+		3A63E62F24D954BC00331D6B /* LabItemsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E62E24D954BC00331D6B /* LabItemsRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		3A17427224B418470019C883 /* libPatterns.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libPatterns.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A17427324B418470019C883 /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1742AC24B41CB30019C883 /* Patterns.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Patterns.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2D175A24DA7E9200AF411E /* LabCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabCategory.swift; sourceTree = "<group>"; };
+		3A2D176C24DAAAFA00AF411E /* GithubJob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJob.swift; sourceTree = "<group>"; };
+		3A2D176E24DAABDC00AF411E /* GithubJobsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsUseCase.swift; sourceTree = "<group>"; };
+		3A2D177024DAAC1E00AF411E /* GithubJobsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubJobsRepository.swift; sourceTree = "<group>"; };
+		3A63E62824D9483900331D6B /* LabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabItem.swift; sourceTree = "<group>"; };
+		3A63E62A24D94F1000331D6B /* LabItemListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabItemListUseCase.swift; sourceTree = "<group>"; };
+		3A63E62E24D954BC00331D6B /* LabItemsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabItemsRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +110,9 @@
 		3A17425024B418310019C883 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				3A2D176924DAAAC000AF411E /* Domains */,
+				3A2D176A24DAAACA00AF411E /* UseCases */,
+				3A63E62C24D9549F00331D6B /* Interfaces */,
 				3A17425124B418310019C883 /* Domain.h */,
 				3A17425224B418310019C883 /* Info.plist */,
 			);
@@ -119,6 +136,42 @@
 				3A17427324B418470019C883 /* Umbrella.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A2D176924DAAAC000AF411E /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E62824D9483900331D6B /* LabItem.swift */,
+				3A2D175A24DA7E9200AF411E /* LabCategory.swift */,
+				3A2D176C24DAAAFA00AF411E /* GithubJob.swift */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		3A2D176A24DAAACA00AF411E /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E62A24D94F1000331D6B /* LabItemListUseCase.swift */,
+				3A2D176E24DAABDC00AF411E /* GithubJobsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		3A63E62C24D9549F00331D6B /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E62D24D954AD00331D6B /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		3A63E62D24D954AD00331D6B /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				3A63E62E24D954BC00331D6B /* LabItemsRepository.swift */,
+				3A2D177024DAAC1E00AF411E /* GithubJobsRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +237,7 @@
 				TargetAttributes = {
 					3A17424D24B418310019C883 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 					};
 					3A17425624B418310019C883 = {
 						CreatedOnToolsVersion = 11.5;
@@ -231,6 +285,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2D177124DAAC1E00AF411E /* GithubJobsRepository.swift in Sources */,
+				3A2D176F24DAABDC00AF411E /* GithubJobsUseCase.swift in Sources */,
+				3A63E62F24D954BC00331D6B /* LabItemsRepository.swift in Sources */,
+				3A2D175B24DA7E9200AF411E /* LabCategory.swift in Sources */,
+				3A2D176D24DAAAFA00AF411E /* GithubJob.swift in Sources */,
+				3A63E62B24D94F1000331D6B /* LabItemListUseCase.swift in Sources */,
+				3A63E62924D9483900331D6B /* LabItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +437,7 @@
 		3A17426324B418320019C883 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
@@ -389,9 +451,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -400,6 +464,7 @@
 		3A17426424B418320019C883 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
@@ -413,6 +478,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -424,6 +490,7 @@
 		3A17426624B418320019C883 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = DomainTests/Info.plist;
@@ -442,6 +509,7 @@
 		3A17426724B418320019C883 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = DomainTests/Info.plist;

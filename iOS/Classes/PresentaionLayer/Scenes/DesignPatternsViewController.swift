@@ -22,9 +22,9 @@ class DesignPatternsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupAppearances()
-        self.setupUI()
-        self.prepareViewDidLoad()
+        setupAppearances()
+        setupUI()
+        prepareViewDidLoad()
     }
 
 
@@ -38,7 +38,7 @@ class DesignPatternsViewController: UIViewController {
     }
 
 
-    func prepareViewDidLoad() {
+    private func prepareViewDidLoad() {
 
     }
 

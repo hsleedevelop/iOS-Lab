@@ -16,6 +16,7 @@
 		3A1742BF24B43A1C0019C883 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1742BE24B43A1C0019C883 /* RxCocoa */; };
 		3A1742C124B43A1C0019C883 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1742C024B43A1C0019C883 /* RxBlocking */; };
 		3A583AB824B4453E0011B1E0 /* Dip in Frameworks */ = {isa = PBXBuildFile; productRef = 3A583AB724B4453E0011B1E0 /* Dip */; };
+		3A63E5FB24D941A700331D6B /* RxSwiftExt in Frameworks */ = {isa = PBXBuildFile; productRef = 3A63E5FA24D941A700331D6B /* RxSwiftExt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 				3A1742C124B43A1C0019C883 /* RxBlocking in Frameworks */,
 				3A1742BF24B43A1C0019C883 /* RxCocoa in Frameworks */,
 				3A1742BD24B43A1C0019C883 /* RxRelay in Frameworks */,
+				3A63E5FB24D941A700331D6B /* RxSwiftExt in Frameworks */,
 				3A1742AB24B41C880019C883 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +135,7 @@
 				3A1742BE24B43A1C0019C883 /* RxCocoa */,
 				3A1742C024B43A1C0019C883 /* RxBlocking */,
 				3A583AB724B4453E0011B1E0 /* Dip */,
+				3A63E5FA24D941A700331D6B /* RxSwiftExt */,
 			);
 			productName = Umbrella;
 			productReference = 3A17418624B410E90019C883 /* Umbrella.framework */;
@@ -187,6 +190,7 @@
 				3A1742A924B41C880019C883 /* XCRemoteSwiftPackageReference "Reusable" */,
 				3A1742B724B43A1C0019C883 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				3A583AB624B4453E0011B1E0 /* XCRemoteSwiftPackageReference "Dip" */,
+				3A63E5F924D941A700331D6B /* XCRemoteSwiftPackageReference "RxSwiftExt" */,
 			);
 			productRefGroup = 3A17418724B410E90019C883 /* Products */;
 			projectDirPath = "";
@@ -378,6 +382,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Umbrella;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -402,6 +407,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.Umbrella;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -503,6 +509,14 @@
 				version = 7.1.1;
 			};
 		};
+		3A63E5F924D941A700331D6B /* XCRemoteSwiftPackageReference "RxSwiftExt" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:RxSwiftCommunity/RxSwiftExt.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -535,6 +549,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A583AB624B4453E0011B1E0 /* XCRemoteSwiftPackageReference "Dip" */;
 			productName = Dip;
+		};
+		3A63E5FA24D941A700331D6B /* RxSwiftExt */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A63E5F924D941A700331D6B /* XCRemoteSwiftPackageReference "RxSwiftExt" */;
+			productName = RxSwiftExt;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
