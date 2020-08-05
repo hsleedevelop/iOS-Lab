@@ -11,9 +11,9 @@ import Foundation
 import Data
 import RxSwift
 
-public enum NetworkError: Error {
+enum NetworkError: Error {
     case error(statusCode: Int, data: Data?)
-    case errorMessage(String?)
+    case withMessage(String?)
     case notConnected
     case cancelled
     case generic(Error)
@@ -30,17 +30,17 @@ public protocol NetworkErrorLogger {
     func log(error: Error)
 }
 
-class NetworkProvider: NetworkService {
+public class NetworkProvider: NetworkService {
     
     private let baseURL: String
-    init(baseURL: String) {
+    public init(baseURL: String) {
         self.baseURL = baseURL
     }
     /// API request
     /// moya concept을 빌려옴
     /// - Parameter api: api path generic
     /// - Returns: response date
-    func request(api: API) -> Observable<Data> {
+    public func request(api: API) -> Observable<Data> {
         guard let url = URL(string: baseURL + api.path) else {
             return Observable.error(NetworkError.urlGeneration)
         }
@@ -57,7 +57,7 @@ class NetworkProvider: NetworkService {
                     if 200 ... 399 ~= statusCode {//서버의 응답 결과 정의 후 다양하게 처리 가능..
                         observer.onNext(data ?? Data())
                     } else {
-                        observer.onError(NetworkError.errorMessage(HTTPURLResponse.localizedString(forStatusCode: statusCode)))
+                        observer.onError(NetworkError.withMessage(HTTPURLResponse.localizedString(forStatusCode: statusCode)))
                     }
                 }
                 observer.onCompleted()
