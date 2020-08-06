@@ -100,12 +100,19 @@ final class MainCoordinator: BaseCoordinator<Void> {
         switch subItem {
         case .MVC:
             let child = MVC.MVCViewController.instantiate()
+            
             let networkProvider = NetworkProvider(baseURL: AppConfiguration.shared.apiBaseURL)
             let githubJobsRepositoryImpl = GithubJobsRepositoryImpl(service: networkProvider)
             child.githubJobsUseCase = GithubJobsUseCaseImpl(githubJobsRepository: githubJobsRepositoryImpl)
+            
             viewController.present(child, animated: true, completion: nil)
         case .MVP:
             let child = MVP.MVPViewController.instantiate()
+            
+            let networkProvider = NetworkProvider(baseURL: AppConfiguration.shared.apiBaseURL)
+            let githubJobsRepositoryImpl = GithubJobsRepositoryImpl(service: networkProvider)
+            child.githubJobsUseCase = GithubJobsUseCaseImpl(githubJobsRepository: githubJobsRepositoryImpl)
+            
             viewController.present(child, animated: true, completion: nil)
         default:
             break

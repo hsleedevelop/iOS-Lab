@@ -18,6 +18,9 @@
 		3A63E5C724D92AC400331D6B /* Umbrella.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A63E5C324D92AC400331D6B /* Umbrella.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3A63E5CA24D92ADC00331D6B /* MVPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E5C924D92ADC00331D6B /* MVPViewController.swift */; };
 		3A63E5CF24D92BD900331D6B /* MVP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A63E5CE24D92BD900331D6B /* MVP.storyboard */; };
+		3AF2204724DBA28100600361 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2204624DBA28100600361 /* MVPPresenter.swift */; };
+		3AF2204F24DBAA7E00600361 /* CommonUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF2204E24DBAA7E00600361 /* CommonUI.framework */; };
+		3AF2205024DBAA7E00600361 /* CommonUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF2204E24DBAA7E00600361 /* CommonUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				3A2D184C24DAC9ED00AF411E /* Data.framework in Embed Frameworks */,
+				3AF2205024DBAA7E00600361 /* CommonUI.framework in Embed Frameworks */,
 				3A63E5C724D92AC400331D6B /* Umbrella.framework in Embed Frameworks */,
 				3A63E5C524D92AC400331D6B /* Domain.framework in Embed Frameworks */,
 			);
@@ -58,6 +62,8 @@
 		3A63E5C324D92AC400331D6B /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A63E5C924D92ADC00331D6B /* MVPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewController.swift; sourceTree = "<group>"; };
 		3A63E5CE24D92BD900331D6B /* MVP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVP.storyboard; sourceTree = "<group>"; };
+		3AF2204624DBA28100600361 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
+		3AF2204E24DBAA7E00600361 /* CommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A2D184B24DAC9ED00AF411E /* Data.framework in Frameworks */,
+				3AF2204F24DBAA7E00600361 /* CommonUI.framework in Frameworks */,
 				3A63E5C624D92AC400331D6B /* Umbrella.framework in Frameworks */,
 				3A63E5C424D92AC400331D6B /* Domain.framework in Frameworks */,
 			);
@@ -124,6 +131,7 @@
 		3A63E5C124D92AC400331D6B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3AF2204E24DBAA7E00600361 /* CommonUI.framework */,
 				3A2D184A24DAC9ED00AF411E /* Data.framework */,
 				3A63E5C224D92AC400331D6B /* Domain.framework */,
 				3A63E5C324D92AC400331D6B /* Umbrella.framework */,
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				3A63E5C924D92ADC00331D6B /* MVPViewController.swift */,
+				3AF2204624DBA28100600361 /* MVPPresenter.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -259,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AF2204724DBA28100600361 /* MVPPresenter.swift in Sources */,
 				3A63E5CA24D92ADC00331D6B /* MVPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

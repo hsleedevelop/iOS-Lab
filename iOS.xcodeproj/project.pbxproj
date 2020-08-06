@@ -42,8 +42,8 @@
 		3A63E61424D944A800331D6B /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E60824D944A800331D6B /* String+Extensions.swift */; };
 		3A63E61524D944A800331D6B /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E60924D944A800331D6B /* ObservableType+Extensions.swift */; };
 		3A63E61724D944A800331D6B /* Alertable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A63E60C24D944A800331D6B /* Alertable.swift */; };
-		3AFB17ED24DAD16700280AD9 /* Network.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17EA24DAD10400280AD9 /* Network.framework */; };
-		3AFB17EE24DAD16700280AD9 /* Network.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17EA24DAD10400280AD9 /* Network.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3AFB17ED24DAD16700280AD9 /* NetworkProvider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17EA24DAD10400280AD9 /* NetworkProvider.framework */; };
+		3AFB17EE24DAD16700280AD9 /* NetworkProvider.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17EA24DAD10400280AD9 /* NetworkProvider.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AFB17F324DAD35900280AD9 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB17F224DAD35900280AD9 /* AppConfigurations.swift */; };
 /* End PBXBuildFile section */
 
@@ -139,6 +139,20 @@
 			remoteGlobalIDString = 3A63E59F24D92A3A00331D6B;
 			remoteInfo = MVPTests;
 		};
+		3AF2201624DBA16900600361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF2201124DBA16900600361 /* CommonUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A2AADE424DBA13C00679A21;
+			remoteInfo = CommonUI;
+		};
+		3AF2201824DBA16900600361 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3AF2201124DBA16900600361 /* CommonUI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3A2AADED24DBA13C00679A21;
+			remoteInfo = CommonUITests;
+		};
 		3AFB17DE24DAD0B300280AD9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3AFB17D924DAD0B300280AD9 /* CustomUI.xcodeproj */;
@@ -180,7 +194,7 @@
 				3A63E5CD24D92B1400331D6B /* MVP.framework in Embed Frameworks */,
 				3A17423B24B417420019C883 /* Umbrella.framework in Embed Frameworks */,
 				3A17423924B417420019C883 /* MVC.framework in Embed Frameworks */,
-				3AFB17EE24DAD16700280AD9 /* Network.framework in Embed Frameworks */,
+				3AFB17EE24DAD16700280AD9 /* NetworkProvider.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,6 +239,7 @@
 		3A63E60824D944A800331D6B /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		3A63E60924D944A800331D6B /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		3A63E60C24D944A800331D6B /* Alertable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alertable.swift; sourceTree = "<group>"; };
+		3AF2201124DBA16900600361 /* CommonUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CommonUI.xcodeproj; path = iOS/SubProject/Presentation/CommonUI/CommonUI.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3AFB17D924DAD0B300280AD9 /* CustomUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CustomUI.xcodeproj; path = iOS/SubProject/Presentation/CustomUI/CustomUI.xcodeproj; sourceTree = SOURCE_ROOT; };
 		3AFB17E424DAD10400280AD9 /* Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Network.xcodeproj; path = SubProject/Infrastructure/Network/Network.xcodeproj; sourceTree = "<group>"; };
 		3AFB17F224DAD35900280AD9 /* AppConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
@@ -239,7 +254,7 @@
 				3A63E5CC24D92B1400331D6B /* MVP.framework in Frameworks */,
 				3A17423A24B417420019C883 /* Umbrella.framework in Frameworks */,
 				3A17423824B417420019C883 /* MVC.framework in Frameworks */,
-				3AFB17ED24DAD16700280AD9 /* Network.framework in Frameworks */,
+				3AFB17ED24DAD16700280AD9 /* NetworkProvider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,6 +576,15 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		3AF2201224DBA16900600361 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AF2201724DBA16900600361 /* CommonUI.framework */,
+				3AF2201924DBA16900600361 /* CommonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3AFB17DA24DAD0B300280AD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -573,6 +597,7 @@
 		3AFB17E324DAD0CE00280AD9 /* SubProjects */ = {
 			isa = PBXGroup;
 			children = (
+				3AF2201124DBA16900600361 /* CommonUI.xcodeproj */,
 				3AFB17D924DAD0B300280AD9 /* CustomUI.xcodeproj */,
 			);
 			name = SubProjects;
@@ -581,7 +606,7 @@
 		3AFB17E524DAD10400280AD9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AFB17EA24DAD10400280AD9 /* Network.framework */,
+				3AFB17EA24DAD10400280AD9 /* NetworkProvider.framework */,
 				3AFB17EC24DAD10400280AD9 /* NetworkTests.xctest */,
 			);
 			name = Products;
@@ -661,6 +686,10 @@
 			productRefGroup = 3A28999324B3392C003791CD /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 3AF2201224DBA16900600361 /* Products */;
+					ProjectRef = 3AF2201124DBA16900600361 /* CommonUI.xcodeproj */;
+				},
 				{
 					ProductGroup = 3AFB17DA24DAD0B300280AD9 /* Products */;
 					ProjectRef = 3AFB17D924DAD0B300280AD9 /* CustomUI.xcodeproj */;
@@ -787,6 +816,20 @@
 			remoteRef = 3A63E5BB24D92A3B00331D6B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		3AF2201724DBA16900600361 /* CommonUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CommonUI.framework;
+			remoteRef = 3AF2201624DBA16900600361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3AF2201924DBA16900600361 /* CommonUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CommonUITests.xctest;
+			remoteRef = 3AF2201824DBA16900600361 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3AFB17DF24DAD0B300280AD9 /* CustomUI.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -801,10 +844,10 @@
 			remoteRef = 3AFB17E024DAD0B300280AD9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		3AFB17EA24DAD10400280AD9 /* Network.framework */ = {
+		3AFB17EA24DAD10400280AD9 /* NetworkProvider.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = Network.framework;
+			path = NetworkProvider.framework;
 			remoteRef = 3AFB17E924DAD10400280AD9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};

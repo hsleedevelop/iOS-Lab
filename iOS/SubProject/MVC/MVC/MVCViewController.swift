@@ -9,7 +9,7 @@
 import UIKit
 
 import Domain
-import CustomUI
+import CommonUI
 
 import RxSwift
 import RxCocoa
@@ -36,10 +36,6 @@ public class MVCViewController: UIViewController, StoryboardSceneBased {
     private func prepareViewDidLoad() {
         setupAppearances()
         setupTableView()
-    }
-    
-    public override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         runUseCase()
     }
     
@@ -57,9 +53,23 @@ public class MVCViewController: UIViewController, StoryboardSceneBased {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 300
         
-        tableView.register(.init(nibName: "GihtubJobTableViewCell", bundle: Bundle(identifier: "io.hsleedevelop.iOS.CustomUI")), forCellReuseIdentifier: "GihtubJobTableViewCell")
+        tableView.register(.init(nibName: "GihtubJobTableViewCell", bundle: CommonUI.bundle), forCellReuseIdentifier: "GihtubJobTableViewCell")
     }
     
+    // MARK: - * Binding --------------------
+    private func setupTableViewRx() {
+        Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(GithubJob.self))
+            .do(onNext: { [weak self] in
+                self?.tableView.deselectRow(at: $0.0, animated: true)
+            })
+            .map { $0.1 }
+            .subscribe(onNext: { [weak self] job in
+                self?.showWebView(with: job)
+            })
+            .disposed(by: disposeBag)
+    }
+
+    // MARK: - * Main Logic --------------------
     private func runUseCase() {
         githubJobsUseCase.lists(page: 0)
             .asDriver(onErrorJustReturn: [])
@@ -71,20 +81,9 @@ public class MVCViewController: UIViewController, StoryboardSceneBased {
             .disposed(by: disposeBag)
     }
     
-    // MARK: - * Binding --------------------
-    private func setupTableViewRx() {
-//        Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(LabItem.self))
-//            .do(onNext: { [weak self] in
-//                self?.tableView.deselectRow(at: $0.0, animated: true)
-//            })
-//            .map { $0.1 }
-//            .map { MainCoordinator.Flow.labItem($0) }
-//            .bind(to: viewModel.flowRelay)
-//            .disposed(by: disposeBag)
+    private func showWebView(with job: GithubJob) {
+        
     }
-
-    // MARK: - * Main Logic --------------------
-
 
     // MARK: - * UI Events --------------------
 

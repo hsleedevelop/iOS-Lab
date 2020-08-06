@@ -10,8 +10,6 @@
 		3A2D186124DACD8900AF411E /* CustomUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2D185724DACD8900AF411E /* CustomUI.framework */; };
 		3A2D186624DACD8900AF411E /* CustomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2D186524DACD8900AF411E /* CustomUITests.swift */; };
 		3A2D186824DACD8900AF411E /* CustomUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2D185A24DACD8900AF411E /* CustomUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3AFB17B824DACE4100280AD9 /* GihtubJobTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFB17B724DACE4100280AD9 /* GihtubJobTableViewCell.swift */; };
-		3AFB17BA24DACE6000280AD9 /* GihtubJobTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AFB17B924DACE6000280AD9 /* GihtubJobTableViewCell.xib */; };
 		3AFB17C224DACEFC00280AD9 /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17BF24DACEFC00280AD9 /* Domain.framework */; };
 		3AFB17C324DACEFC00280AD9 /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17BF24DACEFC00280AD9 /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3AFB17C624DACEFC00280AD9 /* Umbrella.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AFB17C124DACEFC00280AD9 /* Umbrella.framework */; };
@@ -53,8 +51,6 @@
 		3A2D186024DACD8900AF411E /* CustomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A2D186524DACD8900AF411E /* CustomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUITests.swift; sourceTree = "<group>"; };
 		3A2D186724DACD8900AF411E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AFB17B724DACE4100280AD9 /* GihtubJobTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GihtubJobTableViewCell.swift; sourceTree = "<group>"; };
-		3AFB17B924DACE6000280AD9 /* GihtubJobTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GihtubJobTableViewCell.xib; sourceTree = "<group>"; };
 		3AFB17BF24DACEFC00280AD9 /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFB17C024DACEFC00280AD9 /* Network.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Network.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFB17C124DACEFC00280AD9 /* Umbrella.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Umbrella.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,8 +120,6 @@
 		3AFB17B624DACE2E00280AD9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3AFB17B724DACE4100280AD9 /* GihtubJobTableViewCell.swift */,
-				3AFB17B924DACE6000280AD9 /* GihtubJobTableViewCell.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -235,7 +229,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFB17BA24DACE6000280AD9 /* GihtubJobTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AFB17B824DACE4100280AD9 /* GihtubJobTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +405,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.CustomUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -439,6 +432,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.hsleedevelop.iOS.CustomUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -450,7 +444,6 @@
 		3A2D186F24DACD8900AF411E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = CustomUITests/Info.plist;
@@ -469,7 +462,6 @@
 		3A2D187024DACD8900AF411E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LRUHN5QC56;
 				INFOPLIST_FILE = CustomUITests/Info.plist;
