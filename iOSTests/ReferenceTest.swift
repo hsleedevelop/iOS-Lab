@@ -109,6 +109,38 @@ class VCTest {
     }
 }
 
+class Person2 {
+    var name: String
+    
+    lazy var greeting: String = {
+        return "Hello my name is \((self.name))"
+    }()
+  
+    init(name: String) {
+        self.name = name
+    }
+    
+    deinit {
+        #if DEBUG
+        print("\(NSStringFromClass(type(of: self))) deinit")
+        #endif
+    }
+}
+
+class Person {
+    let name: String
+    init(name: String) { self.name = name }
+    var apartment: Apartment?
+    deinit { print("\(name) is being deinitialized") }
+}
+
+class Apartment {
+    let unit: String
+    init(unit: String) { self.unit = unit }
+    unowned var tenant: Person?
+    deinit { print("Apartment \(unit) is being deinitialized") }
+}
+
 
 class ReferenceTest: XCTestCase {
 
@@ -127,6 +159,26 @@ class ReferenceTest: XCTestCase {
         //test.run3()
         test.run4()
         test = nil
+    }
+    
+    func test2() {
+        var person: Person2! = Person2(name: "jack")
+        print(person.greeting)
+        person = nil
+    }
+    
+    func test3() {
+        var john: Person?
+        var unit4A: Apartment?
+
+        john = Person(name: "John Appleseed")
+        unit4A = Apartment(unit: "4A")
+
+        john!.apartment = unit4A
+        unit4A!.tenant = john
+        
+        unit4A = nil
+        john = nil
     }
 
     func testPerformanceExample() throws {
